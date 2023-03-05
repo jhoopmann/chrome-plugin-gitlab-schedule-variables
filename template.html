@@ -1,0 +1,28 @@
+<div class="ci-variable-row-body border-bottom">
+    <input class="js-ci-variable-input-id" name="schedule[variables_attributes][][id]" type="hidden" value="">
+    <input class="js-ci-variable-input-destroy" name="schedule[variables_attributes][][_destroy]" type="hidden">
+    <select class="js-ci-variable-input-variable-type ci-variable-body-item form-control select-control custom-select table-section section-15"
+        name="schedule[variables_attributes][][variable_type]"
+    >
+        <option value="env_var">Variable</option>
+        <option value="file">File</option>
+    </select>
+    <input class="js-ci-variable-input-key ci-variable-body-item qa-ci-variable-input-key form-control gl-form-input table-section section-15"
+           name="schedule[variables_attributes][][key]" placeholder="Input variable key" type="text"
+           value=""><p class="gl-field-error hidden">This field is required.</p>
+    <div class="ci-variable-body-item gl-show-field-errors table-section section-15 border-top-0 p-0">
+        <div class="form-control js-secret-value-placeholder qa-ci-variable-input-value overflow-hidden hide">
+            *****************
+        </div>
+        <textarea class="js-ci-variable-input-value js-secret-value qa-ci-variable-input-value form-control gl-form-input" name="schedule[variables_attributes][][secret_value]" placeholder="Input variable value" rows="1"
+        ></textarea>
+        <p class="masking-validation-error gl-field-error hide" style="display: none;">
+            Cannot use Masked Variable with current value
+            <a target="_blank" rel="noopener noreferrer" href="/help/ci/variables/README#mask-a-cicd-variable">
+                ?</a>
+        </p>
+    </div>
+    <button aria-label="Remove variable row" class="gl-button btn btn-default btn-icon js-row-remove-button ci-variable-row-remove-button table-section" type="button">
+        x
+    </button>
+</div>
